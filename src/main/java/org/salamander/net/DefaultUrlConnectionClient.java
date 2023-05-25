@@ -1,7 +1,8 @@
 package org.salamander.net;
 
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.crypto.Cipher;
 import java.net.HttpURLConnection;
@@ -16,7 +17,7 @@ public class DefaultUrlConnectionClient {
     /**
      * Use to log data to console.
      */
-    private final static Logger log = Logger.getLogger(DefaultUrlConnectionClient.class);
+    private final static Logger log = LoggerFactory.getLogger(DefaultUrlConnectionClient.class);
 
     public void connectToUrl(String url) throws Exception {
 

@@ -1,4 +1,6 @@
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import org.salamander.net.DefaultUrlConnectionClient;
 
 import java.util.Arrays;
@@ -9,7 +11,7 @@ import java.util.List;
  */
 public class GateKeeper {
 
-    private final static Logger log = Logger.getLogger(GateKeeper.class);
+    private final static Logger log = LoggerFactory.getLogger(GateKeeper.class);
     public static void main(String[] args) {
 
         //BasicConfigurator.configure();
